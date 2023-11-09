@@ -14,3 +14,12 @@ CREATE TABLE animals (
     ownerid INT,
     PRIMARY KEY (animalid)
 );
+--feat/create-table-owners
+CREATE TABLE owners (
+    ownerid INT PRIMARY KEY,
+    ofirstname VARCHAR(255),
+    olastname VARCHAR(255),
+    address VARCHAR(255),
+    phone VARCHAR(255),
+    email VARCHAR(255)
+);
