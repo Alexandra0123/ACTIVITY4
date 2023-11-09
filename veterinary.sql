@@ -156,3 +156,6 @@ ALTER TABLE owners ADD registereddate DATE;
 --feat/remove-appointment-simba
 DELETE FROM appointments WHERE animalid = 12345 AND appointmentdate = '2023-11-09';
 
+--feat/rename-column-paymenttime
+ALTER TABLE invoices RENAME COLUMN paymentdate TO paymenttime;
+
