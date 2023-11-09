@@ -94,3 +94,17 @@ VALUES
     (8, 'Carmen', 'Fernandez', '222 Birch St, Taguig', '333-222-1111', 'carmen@example.com'),
     (9, 'Pedro', 'Santillian', '888 Spruce St, Bacolod', '888-777-3333', 'pedro@example.com'),
     (10, 'Sofia', 'Villianueva', '777 Walnut St, Iloilo', '111-999-3333', 'sofia@example.com');
+
+    --feat/insert-10-rows-doctors
+INSERT INTO doctors (doctorid, dfirstname, dlastname, specialty, phone, email)
+VALUES
+    (1, 'John', 'Doe', 'Cardiology', '555-1234', 'johndoe@example.com'),
+    (2, 'Jane', 'Doe', 'Pediatrics', '555-5678', 'janedoe@example.com'),
+    (3, 'Bob', 'Smith', 'Oncology', '555-9012', 'bobsmith@example.com'),
+    (4, 'Alice', 'Johnson', 'Neurology', '555-3456', 'alicejohnson@example.com'),
+    (5, 'David', 'Lee', 'Dermatology', '555-7890', 'davidlee@example.com'),
+    (6, 'Sarah', 'Kim', 'Psychiatry', '555-2345', 'sarahkim@example.com'),
+    (7, 'Michael', 'Chen', 'Endocrinology', '555-6789', 'michaelchen@example.com'),
+    (8, 'Emily', 'Wang', 'Gastroenterology', '555-0123', 'emilywang@example.com'),
+    (9, 'James', 'Nguyen', 'Rheumatology', '555-4567', 'jamesnguyen@example.com'),
+    (10, 'Maria', 'Garcia', 'Allergy and Immunology', '555-8901', 'mariagarcia@example.com');
