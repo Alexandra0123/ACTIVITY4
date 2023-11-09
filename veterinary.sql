@@ -51,3 +51,16 @@ CREATE TABLE invoices (
     paymentdate DATE,
     FOREIGN KEY (appointmentid) REFERENCES appointments(appointmentid)
 );
+--feat/create-table-medicalrecords
+CREATE TABLE medicalrecords (
+    recordid INT NOT NULL,
+    animalid INT,
+    recorddate TIMESTAMP,
+    doctorid INT,
+    diagnosis TEXT,
+    prescription TEXT,  
+    notes TEXT,
+    PRIMARY KEY (recordid),
+    FOREIGN KEY (animalid) REFERENCES animals(animalid),
+    FOREIGN KEY (doctorid) REFERENCES doctors(doctorid)
+);
