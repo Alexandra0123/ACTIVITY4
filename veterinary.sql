@@ -108,3 +108,17 @@ VALUES
     (8, 'Emily', 'Wang', 'Gastroenterology', '555-0123', 'emilywang@example.com'),
     (9, 'James', 'Nguyen', 'Rheumatology', '555-4567', 'jamesnguyen@example.com'),
     (10, 'Maria', 'Garcia', 'Allergy and Immunology', '555-8901', 'mariagarcia@example.com');
+
+     --feat/insert-10-rows-appointments
+INSERT INTO appointments (appointmentid, animalid, appointmentdate, reason)
+VALUES (1, 1, '2023-11-09', 'Annual checkup'),
+       (2, 2, '2023-11-10', 'Vaccination'),
+       (3, 3, '2023-11-11', 'Surgery'),
+       (4, 4, '2023-11-12', 'Checkup'),
+       (5, 5, '2023-11-13', 'Vaccination'),
+       (6, 6, '2023-11-14', 'Surgery'),
+       (7, 7, '2023-11-15', 'Checkup'),
+       (8, 8, '2023-11-16', 'Vaccination'),
+       (9, 9, '2023-11-17', 'Surgery'),
+       (10, 10, '2023-11-18', 'Checkup'),
+       (11, 2, '2023-11-19', 'Vaccination');
