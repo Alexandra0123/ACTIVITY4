@@ -162,3 +162,6 @@ ALTER TABLE invoices RENAME COLUMN paymentdate TO paymenttime;
 --feat/modify-lastname-dr-reyes-gonzales
 UPDATE doctors SET dlastname = 'reyes-gonzales' WHERE dfirstname = 'Sofia' AND dlastname = 'LASTNAME';
 
+--feat/list-total-sales
+SELECT SUM(totalamount) AS total_sales
+FROM invoices;
