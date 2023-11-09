@@ -23,3 +23,14 @@ CREATE TABLE owners (
     phone VARCHAR(255),
     email VARCHAR(255)
 );
+
+--feat/create-table-doctors
+CREATE TABLE doctors (
+    doctorid INT NOT NULL,
+    dfirstname VARCHAR(255) NOT NULL,
+    dlastname VARCHAR(255) NOT NULL,
+    specialty VARCHAR(255),
+    phone VARCHAR(255),
+    email VARCHAR(255),
+    PRIMARY KEY (doctorid)
+);
