@@ -172,3 +172,7 @@ FROM appointments
 GROUP BY animalid
 ORDER BY num_appointments DESC
 LIMIT 1;
+
+--feat/list-species-catered
+SELECT DISTINCT species
+FROM animals;
