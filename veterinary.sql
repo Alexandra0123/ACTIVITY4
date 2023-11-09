@@ -165,3 +165,10 @@ UPDATE doctors SET dlastname = 'reyes-gonzales' WHERE dfirstname = 'Sofia' AND d
 --feat/list-total-sales
 SELECT SUM(totalamount) AS total_sales
 FROM invoices;
+
+--feat/list-animal-w-most-appoinment
+SELECT animalid, COUNT(*) AS num_appointments
+FROM appointments
+GROUP BY animalid
+ORDER BY num_appointments DESC
+LIMIT 1;
