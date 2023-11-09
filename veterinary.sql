@@ -176,3 +176,16 @@ LIMIT 1;
 --feat/list-species-catered
 SELECT DISTINCT species
 FROM animals;
+
+--feat/list-total-appoinment-owner-maria
+SELECT COUNT(*) AS num_appointments
+FROM appointments
+WHERE animalid IN (
+    SELECT animalid
+    FROM animals
+    WHERE ownerid IN (
+        SELECT ownerid
+        FROM owners
+        WHERE ofirstname = 'Maria'
+    )
+);
