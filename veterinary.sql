@@ -42,3 +42,12 @@ CREATE TABLE appointments (
     appointmentdate DATE,
     reason VARCHAR(255)
 );
+
+--feat/create-table-invoices
+CREATE TABLE invoices (
+    invoicesid INT,
+    appointmentid INT,
+    totalamount NUMERIC(10, 2),
+    paymentdate DATE,
+    FOREIGN KEY (appointmentid) REFERENCES appointments(appointmentid)
+);
